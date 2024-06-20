@@ -1,17 +1,13 @@
 :root {
-    --color-1: #0F1B4C;
-    --color-2: #063183;
+    --color-1: #FFB900;
+    --color-2: #171100;
     --color-3: #ffffff;
-    --color-4: #000000;
-    --color-5: #687690;
-    --color-6: #0689FF;
-    --color-7: #F5FAFE;
-    --color-8: #A7A7A7;
-    --bg:#E6F0FF;
+    --color-4: #2E2100;
+    --color-5: #5F5B53;
 }
-::selection{background-color: transparent; color: #0029ff;}
+::selection{background-color: transparent; color: #aa7c00;}
 html {font-size: 62.5%;}
 html,body {scroll-behavior: smooth;}
 a {text-decoration: none;}
 ul {list-style-type: none; padding: 0; margin: 0;text-indent: 0;}
-* {}
+* {font-family: Poppins, sans-serif; font-size: 1.6rem;font-weight: 400;line-height: 1.15; color: var(--color-5); }
