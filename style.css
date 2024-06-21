@@ -56,10 +56,13 @@ body {
 
             .content .cta-wrapper {display: flex;align-items: center;gap: 28px; margin: 38px 0 48px;}
                 .cta-wrapper > a.cta-button {padding: 17px 34px; display: inline-flex; align-items: center; text-align: center;}
-                .content .watch-video {display: flex; align-items: center; gap: 14px;}
-                    .watch-video a {display: flex;align-items: center;justify-content: center; width: 40px;height: 40px; background: var(--color-3); border-radius: 50%; transition: .3s;box-shadow: 0 4px 20px rgba(0 0 0 / 0.2);}
-                    .watch-video a:hover {box-shadow: 0 4px 5px rgba(0 0 0 / 0.2);}
+                .content a.watch-video {display: flex; align-items: center; gap: 14px;}
+
+                    .watch-video div {display: flex;align-items: center;justify-content: center; width: 40px;height: 40px; background: var(--color-3); border-radius: 50%; transition: .3s;box-shadow: 0 4px 20px rgba(0 0 0 / 0.2);}
+                    .watch-video:hover div {box-shadow: 0 4px 5px rgba(0 0 0 / 0.2);}
+                    .watch-video div i {color: var(--color-1);}
                     .watch-video span {color: var(--color-2); font-weight: 600; font-size: 1.8rem;}
+
             .static p {font-size: 1.8rem;}
             .content .static {display: flex; flex-wrap: wrap; gap: 28px; align-items: center;}
                 .static .item span:first-child {font-size: 4.4rem; font-weight: 700;font-family: 'Sen', sans-serif; color: var(--color-2);}
