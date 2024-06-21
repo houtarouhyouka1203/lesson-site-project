@@ -7,12 +7,21 @@ body {
     .button {border-radius: 24.5px; font-size: 1.6rem; font-weight: 600; color: var(--color-3); display: inline-flex; align-items: center; text-align: center; background: var(--color-2); transition: .3s;}
     .button:hover{background: var(--color-1); box-shadow: 0 4px 20px rgba(0 0 0 / 0.2);}
 
-
+    /* Button3 - Button for navigation L-R */
+    .button3 {width: 40px;height: 40px;border-radius: 50%; border: 1px solid var(--color-1); display: flex;align-items: center;justify-content: center; transition: .3s;}
+    .button3:hover {background: var(--color-1);} .button3:hover i{color: var(--color-3);}
 
 /* Headers */
     h1, h2, h3 {margin: 0;padding: 0;}
-    h1 {font-family: 'Sen', sans-serif; font-weight: 700;font-size: 5.8rem;;line-height: 1.17; color: var(--color-2);}
+    h1, h2, h3 { color: var(--color-2);font-weight: 700;}
+    h1, h2 {font-family: 'Sen', sans-serif;}
+    h1 {font-size: 5.8rem;line-height: 1.17;}
+    h2 {font-size: 3.8rem;line-height: 1.2;}
+    h3 {font-family: 'Poppins', sans-serif; font-size: 1.8rem;font-weight: 600;line-height: 1.5;}
     p {margin: 0;}
+/* other */
+    i {color: var(--color-1);}
+
 /* Selectors */
     /* Header */
     .bar, header .wrapper {background: var(--bg);}
@@ -34,8 +43,8 @@ body {
         header .wrapper .cta-button {margin-left: 70px; padding: 10px 40px; }
 
     /* Hero container */
-    .hero {width: 100%; background: var(--bg); display: flex; min-height: 630px;max-height: 950px; height: calc(100vh - 96px);}
-    .hero .wrapper {display: flex; align-items: center; gap: 130px;}
+    main .hero {width: 100%; background: var(--bg); display: flex; min-height: 630px;max-height: 950px; height: calc(100vh - 96px);}
+    main .hero .wrapper {display: flex; align-items: center; gap: 130px;}
         /* Image content */
         .mixed-image {max-height: 680px; width: 50%; height: 85%; display: flex; align-items: center;}
             .mixed-image .img {background: url(./assets/img/landing/hero/guy.jpg) center / contain no-repeat; height: 100%;aspect-ratio: 470 / 685; border-radius: 20px; position: relative;}
@@ -60,11 +69,35 @@ body {
 
                     .watch-video div {display: flex;align-items: center;justify-content: center; width: 40px;height: 40px; background: var(--color-3); border-radius: 50%; transition: .3s;box-shadow: 0 4px 20px rgba(0 0 0 / 0.2);}
                     .watch-video:hover div {box-shadow: 0 4px 5px rgba(0 0 0 / 0.2);}
-                    .watch-video div i {color: var(--color-1);}
                     .watch-video span {color: var(--color-2); font-weight: 600; font-size: 1.8rem;}
 
             .static p {font-size: 1.8rem;}
             .content .static {display: flex; flex-wrap: wrap; gap: 28px; align-items: center;}
                 .static .item span:first-child {font-size: 4.4rem; font-weight: 700;font-family: 'Sen', sans-serif; color: var(--color-2);}
-
-
+            /*  */
+    /* Course container */
+    main>.course {display: flex;padding: 200px 0;}
+    .course .wrapper {display: flex; flex-direction: column; gap: 55px;}
+        /* main.course >> section 1 */
+        main>.course .section1 {display: flex;align-items: center;width: 100%;}
+            .section1 .texts {display: flex; flex-direction: column;gap: 16px; max-width: 500px; width: 40%;}
+            .section1 .texts>p {font-size: 1.8rem;line-height: 2;}
+            .section1 .navigation {display: flex;gap: 18px;align-items: center; margin-left: auto;}
+        main>.course .section2 {display: flex; align-items: center;gap: 30px; flex-wrap: wrap;}
+            .section2 .card, .section2 img, .section2 .desc {transition: .3s;}
+            .section2 .card {width: 370px; height: 486px; border-radius: 12px; overflow: hidden; position: relative;}
+                .card img {width: 100%; height: 100%; object-fit: cover; position: absolute;top: 0;left: 0;}
+                .card .desc {width: 100%; box-sizing: border-box; position: absolute; bottom: 0;left: 0; background: var(--color-3); padding: 16px 22px 22px;}
+                .card .desc {border: 1px solid #E2DFDA; border-bottom-right-radius: 12px;border-bottom-left-radius: 12px; border-top: 0;}
+                .desc .section1, .desc .section2 {display: flex; align-items: center;}
+                    /* desc section1 */
+                    .card .desc .section1 .rating {display: flex;gap: 6px; margin-left: auto; align-items: center;}
+                        .rating .star {width: 18px;height: 18px;background: url(./assets/img/landing/icons/star.svg) center / contain no-repeat;}
+                        .rating .rating-number {color: #FEA31B;}
+                    .card .desc p {font-size: 1.4rem; line-height: 1.8; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient:vertical; overflow: auto; margin: 6px 0 12px;}
+                    /* desc section2 */
+                    .card .desc .section2 .book{padding: 12px 24px; margin-left: auto;}
+                    .card .desc .section2 .price{font-size: 1.8rem;font-weight: 600;line-height: 1.5; color: var(--color-2);}
+            .section2 .card:hover {box-shadow: 0px 18px 36px 0px rgba(0, 0, 0, 0.05);}
+            .section2 .card:hover img {transform: scale(1.3); filter: brightness(0.7);}
+            .section2 .card:hover .desc {border-color: transparent;}
