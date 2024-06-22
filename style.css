@@ -22,7 +22,7 @@ body {
     h1 {font-size: 5.8rem;line-height: 1.17;}
     h2 {font-size: 3.8rem;line-height: 1.2;}
     h3 {font-family: 'Poppins', sans-serif; font-size: 1.8rem;font-weight: 600;line-height: 1.5;}
-    p {margin: 0;}
+    p {margin: 0; line-height: 1.75;}
 /* other */
     i {color: var(--color-1);}
 
@@ -51,7 +51,7 @@ body {
     main .hero .wrapper {display: flex; align-items: center; gap: 130px;}
         /* Image content */
         .mixed-image {max-height: 680px; width: 50%; height: 85%; display: flex; align-items: center;}
-            .mixed-image .img {background: url(./assets/img/landing/hero/guy.jpg) center / contain no-repeat; height: 100%;aspect-ratio: 470 / 685; border-radius: 20px; position: relative;}
+            .mixed-image .img {background: url(./assets/img/landing/hero/guy.gif) center / contain no-repeat; height: 100%;aspect-ratio: 470 / 685; border-radius: 20px; position: relative;}
             .mixed-image .content {width: 220px; display: flex; flex-direction: column; gap: 14px; position: absolute; bottom: 48px;right: -100px; box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.05); border-radius: 12px; background: var(--color-3); padding: 24px;} 
             .mixed-image .content .course {display: flex; gap: 16px; align-items: center; --bgi: #FFF9E8;}
                 .mixed-image .course .icon {width: 48px;height: 48px; border-radius: 50%; background: var(--bgi); display: flex;align-items: center;justify-content: center;}
@@ -118,3 +118,31 @@ body {
             .testimonial .section2 {width: 70%;}
             .testimonial .section2 p {color: var(--color-3); font-size: 2.6rem;line-height: 1.6;font-style: italic; position: relative;}
             .testimonial .section2 p:before {content: ''; display: block; position: absolute; top: -28px;left: -30px;width: 28px;height: 30px; background: url(./assets/img/landing/icons/quote.svg) center / cover no-repeat;}
+    /* 
+        dialog-container Container 
+        :: NOTE :: This is for both .features and .cta control in general
+    */
+    main .dialog-container {margin: 200px 0; }
+        .dialog-container .wrapper {display: flex;align-items: center;gap: 130px;}
+        .dialog-container .wrapper > * {flex: 1;}
+            /* dialog-container > Img list */
+            .dialog-container .section1 {display: flex;align-items: center; gap: 30px;}
+                /* Img flash card */
+                .dialog-container .section1 img {width: 50%; aspect-ratio: 5 / 8; object-fit: cover; border-radius: 16px; transition: .3s;}
+                .dialog-container .section1 img:first-child {margin-top: 34px;} 
+                .dialog-container .section1 img:last-child {margin-bottom: 33px;} 
+
+                .dialog-container .section1 img:first-child:hover {transform: rotateY(20deg) skewY(20deg)}
+                .dialog-container .section1 img:last-child:hover {transform: rotateY(-20deg) skewY(-20deg)}
+            /* dialog-container > Texts */
+            .dialog-container .section2 {display: block;}
+            .dialog-container .section2 > * {margin-bottom: 16px;}
+            .dialog-container .section2 .cta-button {margin-top: 16px;padding: 11px 37px;display: inline-flex; align-items: center; text-align: center; border-radius: 26px;}
+    /* dialog-container / cta's modification */
+        .dialog-container.cta .wrapper {justify-content: space-between;}
+        .dialog-container.cta .wrapper > * {flex: 1;}
+        .dialog-container.cta .section1{order: 2; flex-basis: 40%; flex-shrink: 1;}
+        .dialog-container.cta .section2{order: 1; flex-basis: 50%; flex-shrink: 0}
+        .dialog-container.cta .section1 {gap: 0;} 
+        .dialog-container.cta .section1 img {width: 100%; aspect-ratio: 21 / 20; border-radius: 20px;}
+        .cta .section2 .cta-button {padding: 12px 32px}
