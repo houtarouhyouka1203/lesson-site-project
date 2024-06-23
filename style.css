@@ -186,7 +186,7 @@ body {
                     .sns p {padding: 18px 0; line-height: 1.85;}
                     .sns .sns-list {display: flex;align-items: center; gap: 18px;}
                     .sns .sns-list a {display: inline-flex; align-items: center; }
-                    .sns i {color: var(--color-3); transition: .3s;}
+                    .sns i {color: var(--color-3); transition: .3s; transform: scale(calc(8 / 7));}
                     .sns-list a:hover i {transform: scale(1.5);}
                 /* footer .section1 >> sitemap */
                 footer .section1 .sitemap {display: flex; align-items: flex-start; gap: 130px; margin-left: auto; justify-content: flex-end;}
