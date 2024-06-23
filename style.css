@@ -33,7 +33,7 @@ body {
         .card-list .card:hover > .desc {border-color: transparent;}
         
 /* Headers */
-    h1, h2, h3 {margin: 0;padding: 0;}
+    h1, h2, h3, h4 {margin: 0;padding: 0;}
     h1, h2, h3 { color: var(--color-2);font-weight: 700;}
     h1, h2 {font-family: 'Sen', sans-serif;}
     h1 {font-size: 5.8rem;line-height: 1.17;}
@@ -168,3 +168,32 @@ body {
             .newsfeed .card .hr {width: 50%;height: 1px;background: #E2DFDA; border-radius: 0.5px;}
         /* blog - scroll */
         .blog .scroll {justify-content: center;}
+    /* Footer */
+    footer {padding-top: 96px; display: flex; background: #2E2100; color: #807D74;}
+        footer .hr {height: 1px; background: #59554B;}
+        footer * {transition: .3s;}
+        footer .wrapper {display: flex;align-items: center; justify-content: center; flex-direction: column;}
+            /* Footer >> Section 1 */
+            footer .section1 {display: flex; align-items: flex-start; margin-bottom: 38px; justify-content: space-between; width: 100%;} 
+                footer .section1 > * {flex-shrink: 0; flex-grow: 1; }
+                /* footer section1 >> sns */
+                footer .section1 .sns {flex-shrink: 1; max-width: 267px;}
+                    .sns .logo {background-image: url(./assets/img/logo/logo_w.svg);}
+                    .sns p {padding: 18px 0; line-height: 1.85;}
+                    .sns .sns-list {display: flex;align-items: center; gap: 18px;}
+                    .sns .sns-list a {display: inline-flex; align-items: center;}
+                    .sns i {color: var(--color-3);}
+                /* footer .section1 >> sitemap */
+                footer .section1 .sitemap {display: flex; align-items: flex-start; gap: 130px; margin-left: auto; justify-content: flex-end;}
+                    /* Sitemap's item */
+                    .sitemap .item {flex-shrink: 0; max-width: 245px;}
+                    .sitemap .item h4 {font-weight: 600;color: var(--color-3);}
+                    .sitemap .item .hr {width: 130px; margin: 14px 0 28px;}
+                    .sitemap .item ul li {font-size: 1.4rem; line-height: 1.85;}
+                        .sitemap .item ul a {display: inline-block; margin-bottom: 12px; line-height: 1.85;}
+                        .sitemap .item ul a:hover, .sitemap .item ul li span {color: var(--color-3); font-weight: 600;}
+            /* Footer >> hr */
+            footer .hr {width: 100%; margin-bottom: 28px;}
+            footer .copyright {text-align: center; margin-bottom: 28px;}
+                        
+
