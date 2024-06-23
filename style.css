@@ -42,6 +42,8 @@ body {
     p {margin: 0; line-height: 1.75;}
 /* other */
     i {color: var(--color-1);}
+    .logo {transition: .3s; display: block;}
+    .logo:hover {transform: skewY(-5deg) rotateY(20deg);}
 
 /* Selectors */
     /* Header */
@@ -181,8 +183,9 @@ body {
                     .sns .logo {background-image: url(./assets/img/logo/logo_w.svg);}
                     .sns p {padding: 18px 0; line-height: 1.85;}
                     .sns .sns-list {display: flex;align-items: center; gap: 18px;}
-                    .sns .sns-list a {display: inline-flex; align-items: center;}
-                    .sns i {color: var(--color-3);}
+                    .sns .sns-list a {display: inline-flex; align-items: center; }
+                    .sns i {color: var(--color-3); transition: .3s;}
+                    .sns-list a:hover i {transform: scale(1.5);}
                 /* footer .section1 >> sitemap */
                 footer .section1 .sitemap {display: flex; align-items: flex-start; gap: 130px; margin-left: auto; justify-content: flex-end;}
                     /* Sitemap's item */
@@ -191,7 +194,9 @@ body {
                     .sitemap .item .hr {width: 130px; margin: 14px 0 28px;}
                     .sitemap .item ul li {font-size: 1.4rem; line-height: 1.85;}
                         .sitemap .item ul a {display: inline-block; margin-bottom: 12px; line-height: 1.85;}
-                        .sitemap .item ul a:hover, .sitemap .item ul li span {color: var(--color-3); font-weight: 600;}
+                        .sitemap .item ul a:hover {color: var(--color-3); font-weight: 600;}
+                        .sitemap .item ul li span {color: var(--color-3); font-weight: 600; font-size: 1.4rem; line-height: 1.85;}
+                        
             /* Footer >> hr */
             footer .hr {width: 100%; margin-bottom: 28px;}
             footer .copyright {text-align: center; margin-bottom: 28px;}
