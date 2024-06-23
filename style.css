@@ -119,7 +119,7 @@ body {
 
     /* Testimonial */
     main .testimonial {display: flex;align-items: center; background: #2E2100;padding: 96px 0;}
-        .testimonial .wrapper {display: flex;align-items: center; justify-content: space-between;}
+        .testimonial .wrapper {display: flex;align-items: flex-start; justify-content: space-between;}
             /* user's review */
             .testimonial .section1.user {width: 30%;}
             .user img {width: 72px;height: 72px;border-radius: 50%; object-fit: cover;}
@@ -128,7 +128,7 @@ body {
             .user .scroll {margin-top: 28px}
             /* user's quote */
             .testimonial .section2 {width: 70%;}
-            .testimonial .section2 p {color: var(--color-3); font-size: 2.6rem;line-height: 1.6;font-style: italic; position: relative;}
+            .testimonial .section2 p {color: var(--color-3); font-size: 2.6rem;line-height: 1.6;font-style: italic; position: relative; margin-top: 30px;}
             .testimonial .section2 p:before {content: ''; display: block; position: absolute; top: -28px;left: -30px;width: 28px;height: 30px; background: url(./assets/img/landing/icons/quote.svg) center / cover no-repeat;}
     /* 
         dialog-container Container 
